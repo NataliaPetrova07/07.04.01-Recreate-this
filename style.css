@@ -62,8 +62,23 @@ header {
     display: flex;
     justify-content: space-around;
 }
+#searchbar {
+    width: 350px;
+    height: 40px;
+    border-radius: .5rem;
+    background-color: var(--color-3);
+    margin: 1rem;
+    padding: 0.6rem;
+}
+#searchbar p {
+    color: var(--color-2);
+   margin: 0;
+}
 
 /* MAIN CONTENT */
+#wrapper {
+    margin: 0 2rem;
+}
 #mainContent {
     display: flex;
     flex-direction: column;
@@ -84,8 +99,6 @@ header {
 footer {
     font-size: .5rem;
 }
-
-
 #mainContent .greyUpper {
     text-align: center;
 }
@@ -105,8 +118,10 @@ h2 {
     justify-content: space-around;
 }
 
-#FromE, #moreLike {
-    margin: 2rem;
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
 }
 
 /* FOOTER */
@@ -133,15 +148,17 @@ h2 {
     }
 }
 @media only screen and (min-width: 1024px) {
-    #mainContent {
-        margin: 0 25rem;
-        }
-
     .imgGrid {
         grid-template-columns: repeat(6, 1fr);
         gap: 1rem;
     }
-    #FromE, #moreLike {
-        margin: 5rem;
+    #wrapper {
+        margin: 0 5rem;
     }
+}
+
+@media only screen and (min-width: 1440px) {
+    #mainContent {
+        margin: 0 20rem;
+        }
 }
