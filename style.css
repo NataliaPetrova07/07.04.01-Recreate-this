@@ -88,7 +88,6 @@ header {
 nav {
   display: flex;
   justify-content: flex-end;
-  margin: 0 2rem;
 }
 button {
   border: none;
@@ -161,15 +160,43 @@ h2 {
 .bigp {
   font-weight: 800;
   font-size: 1.8rem;
+  margin:0;
 }
 #mainFlex {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 1rem;
   border-bottom: 1px solid var(--color-3);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#mainFlex div {
+    display: flex;
+    flex: 1 1 auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid var(--color-3);
+    padding-left: 1rem;
+    height: 5rem;
+    justify-content: center;
+}
+#mainFlex div:first-child {
+    border-left: none;
+}
+#mainFlex p {
+    margin: 0;
 }
 #ingredients {
   border-bottom: 1px solid var(--color-3);
+}
+#ingredients h3 {
+    text-align: left;
+}
+.elogo{
+    border-radius: 5rem;
+    width: 3.5rem;
 }
 ul.buttons {
   margin: 0;
@@ -179,7 +206,9 @@ ul.buttons {
   gap: 1rem;
   align-items: center;
 }
-
+.pointer {
+    cursor: pointer;
+}
 /* FOOTER */
 .footer1 {
   display: flex;
@@ -253,14 +282,21 @@ h4 {
   #searchbar {
     margin: 0;
   }
-  nav {
-    margin: 0;
-  }
   .CTA {
     justify-content: flex-start;
   }
   .buttons {
     gap: 0;
+  }
+  #mainFlex {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+  }
+  #mainFlex div {
+      height: 8rem;
+  }
+  #FromE{
+      margin-top: 2rem;
   }
 }
 @media only screen and (min-width: 1024px) {
