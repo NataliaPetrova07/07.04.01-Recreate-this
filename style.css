@@ -1,164 +1,184 @@
 :root {
-    --color-1: #212121;
-    --color-2: #757575;
-    --color-3: #eaeaea;
-    --color-4: #f5f5f5;
-    --color-5: #cc1f0c;
+  --color-1: #212121;
+  --color-2: #808080;
+  --color-3: #dbdbdb;
+  --color-4: #f5f5f5;
+  --color-5: #cc1f0c;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 0%;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 p {
-    color: var(--color-1);
+  color: var(--color-1);
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-2);
+  text-decoration: none;
+  color: var(--color-2);
 }
-ul{
-    padding: 0;
+ul {
+  padding: 0;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 footer {
-    background-color: var(--color-3);
+  background-color: var(--color-3);
 }
 
 .bold {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .red {
-    background-color: var(--color-5);
+  background-color: var(--color-5);
 }
 
 h1 {
-    font-weight: 300;
+  font-weight: 300;
 }
 h2 {
-    text-align: center;
+  text-align: center;
 }
-h3{
-    text-align: center;
-} 
+h3 {
+  text-align: center;
+}
 
 header {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 #searchbar {
-    width: 350px;
-    height: 40px;
-    border-radius: .5rem;
-    background-color: var(--color-3);
-    margin: 1rem;
-    padding: 0.6rem;
+  width: 350px;
+  height: 40px;
+  border-radius: 0.5rem;
+  background-color: var(--color-3);
+  margin: 1rem;
+  padding: 0.6rem;
 }
 #searchbar p {
-    color: var(--color-2);
-   margin: 0;
+  color: var(--color-2);
+  margin: 0;
+}
+button {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+button.grey {
+  color: var(--color-1);
+}
+button.grey:hover {
+  background-color: var(--color-3);
+}
+button.red {
+  color: white;
+}
+button.red:hover {
+  background-color: #911204;
 }
 
 /* MAIN CONTENT */
 #wrapper {
-    margin: 0 2rem;
+  margin: 0 2rem;
 }
 #mainContent {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5rem;
-    }
+  display: flex;
+  flex-direction: column;
+  margin: 0 5rem;
+}
 .imgGrid {
-    display: grid;
-    gap: .5rem;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 .footer1 {
-    display: flex;
-    justify-content: space-between;
-    gap: .5rem;
-    margin: 0 3rem;
-
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0 3rem;
 }
 footer {
-    font-size: .5rem;
+  font-size: 0.5rem;
 }
 #mainContent .greyUpper {
-    text-align: center;
+  text-align: center;
 }
 h2 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 .greyUpper {
-    color: var(--color-2);
-    text-transform: uppercase;
+  color: var(--color-2);
+  text-transform: uppercase;
 }
 .bigp {
-    font-weight: 800;
-    font-size: 1.8rem;
+  font-weight: 800;
+  font-size: 1.8rem;
 }
 #mainFlex {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .buttons {
-    display: flex;
-    gap: 1rem;
-    margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 /* FOOTER */
 .footer2 {
-    text-align: center;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 768px) {
-    #mainContent {
-        margin: 0 10rem;
-        }
+  #mainContent {
+    margin: 0 10rem;
+  }
 
-    .imgGrid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .footer1 {
-        margin: 0 10rem;
-    }
-    footer {
-        font-size: 1rem;
-        gap: 1rem;
-    }
+  .imgGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer1 {
+    margin: 0 10rem;
+  }
+  footer {
+    font-size: 1rem;
+    gap: 1rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
-    .imgGrid {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 1rem;
-    }
-    #wrapper {
-        margin: 0 5rem;
-    }
+  .imgGrid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+  #wrapper {
+    margin: 0 5rem;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    #mainContent {
-        margin: 0 20rem;
-        }
+  #mainContent {
+    margin: 0 20rem;
+  }
 }
